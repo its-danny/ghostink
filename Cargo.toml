@@ -1,0 +1,60 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[workspace.dependencies]
+# Crypto
+aes-gcm = "0.10.3"
+rand = "0.8.5"
+
+# Encoding
+base64 = "0.22.1"
+hex = "0.4.3"
+
+# CLI
+clap = { version = "4.5.41", features = ["derive"] }
+clap-stdin = "0.6.0"
+
+# HTTP
+axum = { version = "0.8.4", features = ["macros"] }
+reqwest = { version = "0.12.22", features = ["json"] }
+
+# Serialization
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+
+# Database
+sqlx = { version = "0.8.6", features = [
+    "runtime-tokio",
+    "tls-native-tls",
+    "postgres",
+    "chrono",
+] }
+
+# Time
+chrono = { version = "0.4.41", features = ["serde"] }
+humantime = "2.1.0"
+
+# Async
+tokio = { version = "1.46.1", features = ["full"] }
+
+# Logging
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "json"] }
+
+# Error handling
+eyre = "0.6.12"
+
+# Environment
+envy = "0.4.2"
+
+# UUID
+uuid = { version = "1.17.0", features = ["v4"] }
+
+# Shared workspace crates
+ghostink-shared = { path = "crates/shared" }

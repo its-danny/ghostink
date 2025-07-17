@@ -1,0 +1,59 @@
+# Git
+.git/
+.gitignore
+
+# Development environment
+.devenv/
+.direnv/
+devenv.nix
+devenv.yaml
+devenv.lock
+.devenv.flake.nix
+
+# Build artifacts
+target/
+Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Documentation
+README.md
+*.md
+
+# CI/CD
+.github/
+.pre-commit-config.yaml
+
+# Other config files
+cog.toml
+
+# Test files
+tests/
+*_test.rs
+
+# Temporary files
+tmp/
+temp/

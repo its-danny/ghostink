@@ -1,0 +1,12 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "DELETE FROM pastes WHERE expires_at <= NOW()",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": []
+  },
+  "hash": "88360c51d085865b33d27cce3b08585347a9e44da1b5a6ed80df786f1dfe6af6"
+}

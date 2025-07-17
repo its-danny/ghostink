@@ -1,0 +1,20 @@
+[package]
+name = "ghostink-cli"
+version = "0.0.0"
+edition = { workspace = true }
+publish = { workspace = true }
+
+[dependencies]
+aes-gcm = { workspace = true }
+base64 = { workspace = true }
+chrono = { workspace = true }
+clap = { workspace = true }
+clap-stdin = { workspace = true }
+eyre = { workspace = true }
+ghostink-shared = { workspace = true }
+hex = { workspace = true }
+humantime = { workspace = true }
+rand = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true }

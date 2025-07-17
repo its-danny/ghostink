@@ -1,0 +1,18 @@
+[package]
+name = "ghostink-api"
+version = "0.0.0"
+edition = { workspace = true }
+publish = { workspace = true }
+
+[dependencies]
+axum = { workspace = true }
+chrono = { workspace = true }
+envy = { workspace = true }
+eyre = { workspace = true }
+ghostink-shared = { workspace = true }
+serde = { workspace = true }
+sqlx = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+uuid = { workspace = true }

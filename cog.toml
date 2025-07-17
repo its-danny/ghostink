@@ -1,0 +1,9 @@
+[changelog]
+path = "CHANGELOG.md"
+remote = "github.com"
+repository = "ghostink"
+owner = "danny"
+
+[packages]
+ghostink-cli = { path = "crates/cli" }
+ghostink-api = { path = "crates/api" }
