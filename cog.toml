@@ -5,5 +5,9 @@ repository = "ghostink"
 owner = "danny"
 
 [packages]
-ghostink-cli = { path = "crates/cli" }
-ghostink-api = { path = "crates/api" }
+ghostink-cli = { path = "crates/cli", pre_bump_hooks = [
+    "cargo set-version {{version}}",
+] }
+ghostink-api = { path = "crates/api", pre_bump_hooks = [
+    "cargo set-version {{version}}",
+] }
